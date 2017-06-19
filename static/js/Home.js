@@ -14,7 +14,7 @@ $(document).ready(function ()
     {
         $.post("/login",{username:$("#username").val(),password:$("#password").val()},function (data)
         {
-            if(data.status=="true")
+            if(data.status==="true")
             {
                 $("#info").text(data['msg']);
                 window.location=data.redirect;
@@ -117,7 +117,7 @@ $(document).ready(function ()
     });
 
     socket.on('chatmessage',function (msg) {
-            if(msg.username===$( "#user").text())
+            if(msg.username==$("#user").text())
             {
                 $("#messages").append(
                     '<div class="msg">'+
@@ -153,7 +153,7 @@ $(document).ready(function ()
             data.forEach(function (comment,index)
             {
 
-                if(comment.username===$( "#user").text())
+                if(comment.username==$("#user").text())
                 {
                     $("#messages").append(
                         '<div class="msg">'+
