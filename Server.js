@@ -64,7 +64,7 @@ io.on('connection', function(socket)
 
     socket.on('logout',function (user) {
         delete onlines[user.username];
-        io.emit('useronline',onlines,{msg:user});
+        io.emit('useronline',onlines);
     });
 
     socket.on('cleartyping',function () {
@@ -162,9 +162,8 @@ app.post("/login",function (req,resp,next) {
 
 app.get( "/logout" , function (req , resp , next )
 {
-    var logouteduser=req.session.auth;
     req.session.auth=null;
-    resp.json( { status: true , redirect : "/" ,msg:logouteduser } );
+    resp.json( { status: true , redirect : "/" } );
 });
 
 app.post("/getinfo",function (req,resp,next)
