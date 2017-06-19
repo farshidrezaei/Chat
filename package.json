@@ -1,0 +1,19 @@
+{
+  "name": "App",
+  "Main": "Server.js",
+  "version": "0.0.1",
+  "author": "Farshid Net",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "mongoose": "latest",
+    "morgan": "latest",
+    "mpromise": "latest",
+    "engine.io": "latest",
+    "socket.io": "latest",
+    "socket.io-client": "latest",
+    "socket.io-adapter": "latest",
+    "socket.io-parser": "latest"
+  }
+}

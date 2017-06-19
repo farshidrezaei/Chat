@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Done!</title>
+    <script src="jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/Done.css">
+    <script src="js/jquery-3.1.1.min.js">
+    </script>
+    <script src="./js/socket.io.js"></script>
+    <script type="text/javascript" src="js/Home.js"></script>
+</head>
+<body>
+    <div class="background">
+
+            <div class="all">
+                <div class="all2" id="users">
+
+                </div>
+                        <div class="card">
+                           <p class="user"> سلام : <span style="display: none" id="user"> </span> </p>
+                            <div id="messages" class="messages">
+
+                            </div>
+                            <input type="text" onchange="r()" class="comment" id="comment">
+                            <button id="sub-comment" class="sub-comment"><</button>
+
+                             <!--   <div id="logout" class="logout">خروج</div> -->
+
+                        </div>
+                <button id="users-tgl" class="usr-tgl">کاربران</button>
+                <button id="logout" class="logout2">خروج</button>
+                <label class="typing" id="typing">.</label>
+            </div>
+    </div>
+</body>
+</html>

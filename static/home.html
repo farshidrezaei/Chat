@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+
+        function aa() {
+            document.getElementById("a").className = "cover";
+            //document.getElementById("filds").style.display = "none";
+            document.getElementById("filds2").className = "filds2-set";
+            document.getElementById("filds").className = "filds-set";
+            //document.getElementById("filds2").style.opacity="1 ";
+            document.getElementById("plus").style.display = "none";
+            setd();
+
+
+        }
+
+        function ok(){
+            document.getElementById("a").className = "coverok";
+            document.getElementById("filds").className = "filds";
+            document.getElementById("filds2").className = "filds2";
+            //document.getElementById("filds2").style.opacity="1 ";
+            document.getElementById("plus").style.display = "block";
+            setd();
+
+        }
+
+        function setd() {
+            document.getElementById("username").value="";
+            document.getElementById("password").value="";
+            document.getElementById("username2").value="";
+            document.getElementById("password2").value="";
+
+        }
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <script src="js/jquery-3.1.1.min.js">
+    </script>
+    <script src="./js/socket.io.js"></script>
+    <script type="text/javascript" src="js/Home.js"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="all">
+                <div style="width: 100%; float: left;padding: 1em 0px 0px;">
+                    <div class="card2">
+                        <div class="card">
+                            <div id="a"   class="coverok">
+                                <p id="plus"  unselectable="on" onselectstart="return false;" onmousedown="return false;" onclick="aa();" class="plus">+</p>
+                                <div id="filds2" class="filds2">
+                                    <p onclick="sls();" style="color: white;font-size: 2em;margin: -9px 0px 9px 43px;">ثبت نام</p>
+                                    <div class="fild">
+                                        <input autocomplete="off" type="text" id="username2" placeholder="نام کاربری" class="username2">
+                                    </div>
+                                    <div class="fildm">
+                                        <input autocomplete="off" type="password" id="password2" placeholder="رمزعبور" class="password2">
+                                        <p class="info2" id="info2"> </p>
+                                        <div class="fild4">
+                                            <div class="submit" id="logup"  unselectable="on" onselectstart="return false;" onmousedown="return false;">
+                                                ثبت نام
+                                            </div>
+                                            <!-- <input type="submit" id="submit" value="ثبت نام" class="submit"> !-->
+                                            <a class="before"  unselectable="on" onselectstart="return false;" onmousedown="return false;" onclick="ok();" id="before">قبلا ثبت نام کرده ام</a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div id="filds" class="filds">
+                                <img src="./img/logo.png" style="width: 11em;margin: -20em 0px 0px;">
+                                <div class="fild">
+                                    <input autocomplete="off" type="text" id="username" placeholder="نام کاربری" class="username">
+                                </div>
+                                <div class="fild2">
+                                    <input autocomplete="off" type="password" id="password" placeholder="رمزعبور"  class="password">
+                                </div>
+                                <p class="info" id="info"> </p>
+                                <div class="fild3">
+                                    <div class="login" id="login" unselectable="on"  onselectstart="return false;" onmousedown="return false;">
+                                        ورود
+                                    </div>
+                                    <a class="before2" unselectable="on" onselectstart="return false;" onmousedown="return false;" onclick="aa();"  id="">هنوز ثبت نام نکرده ام</a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,932 @@
+@media (min-width: 100px) and (max-width: 500px) {
+
+    @font-face {
+        font-family:'IranSans';
+        src:url('./font/IranSans.eot');
+        src:local('IRAN Sans'),
+        local('IRAN Sans'),
+        url('./font/IranSans.eot?#iefix') format('embedded-opentype'),
+            /*url('IranSams.woff') format('woff'), */
+        url('./font/IranSans.ttf') format('truetype');
+
+        font-style:normal;
+        font-weight:normal;
+    }
+    *{font-family: "IranSans"}
+    body{background-color:#070c3e ;margin: 0;padding: 0}
+
+    .comment-back
+    {
+
+        height: auto;
+        width: 100%;
+        background-color: #d4aa32;
+        -webkit-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        position: relative;
+
+    }
+    .comments
+    {
+        width: 96%;
+        height: 6em;
+        background-color: white;
+        position: absolute;
+        left: 2%;
+        border-radius: 0.5em;
+        box-shadow: 0.2px 1px 0.5px 1px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .comment-body
+    {
+        border-bottom: 1px solid rgb(212, 170, 50);
+        padding: 4px 10px 0 0;
+        height:1.5em;
+    }
+
+    .comment-text
+    {
+        direction: rtl;
+        text-align: right;
+        float: right;
+    }
+    .all
+    {
+        height: 100%;
+        width: 100%;
+        background-color: #d4aa32;
+        -webkit-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        position: fixed;
+        overflow: hidden;
+
+    }
+    .card
+    {
+        padding: 0 0 0 0;
+        height: 22em;
+        position:relative;
+        width: 17em;
+        background-color: white;
+        margin:0 auto;
+        -webkit-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        border-radius: 1em;
+        padding: 0 0 0 0;
+    }
+    .card2
+    {
+        padding: 0 0 0 0;
+        height: 22em;
+        position:relative;
+        width: 17em;
+        background-color: white;
+        margin:0 auto;
+        -webkit-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        border-radius: 1em;
+        padding: 0 0 0 0;
+
+
+    }
+    .cover
+    {
+        float: left;
+        transition: all 0.6s cubic-bezier(1,0,0,1);
+        background-color: #ff003f;
+        height: 100%;
+        width: 100%;
+        border-radius: 1em;
+    }
+    .coverok
+    {
+        transition: all 0.6s cubic-bezier(1,0,0,1);
+        background-color: #ff003f;
+        height: 4.5em;
+        width: 4.5em;
+        border-radius: 5em;
+        margin:3em 0 0 14.5em;
+        float: left;
+        -webkit-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+    }
+    .plus
+    {
+        transition: all 0.5s 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+        font-size: 3em;
+        margin: 36px 0px 0px 3px;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        line-height: 0;
+
+    }
+    .plus:hover
+    {
+        transform: rotate(180deg)  scale(2);
+    }
+    .filds-set
+    {
+        height: 0;
+        overflow: hidden;
+        transition: all 2s 0.6s ease;
+        float: left;
+        margin: 3em 0px 0px 3.3em;
+        opacity: 0 ;
+
+    }
+    .filds
+    {
+
+
+        transition: all 2s 0.6s ease;
+        float: left;
+        margin: 3em 0px 0px 3.3em;
+        opacity:1;
+
+    }
+    .filds2
+    {
+        transition: all 2s 0.6s ease;
+        height: 0;
+        overflow: hidden;
+
+        float: left;
+        margin: 3em 0px 0px 3.3em;
+        opacity: 0 ;
+
+    }
+    .filds2-set
+    {
+
+        transition: all 0.6s 0.6s ease;
+        float: left;
+        margin: 3em 0px 0px 3.3em;
+        opacity: 1 ;
+        overflow: hidden;
+    }
+
+    .fild
+    {
+        margin: 0px auto 0.2em;
+
+
+    }
+    .fildm
+    {
+        margin: 0px auto 0.2em;
+        width: 11em;
+
+
+    }
+    .fild2
+    {
+        margin: 0px auto 0.2em;
+        width: 11.5em;
+        height: 2em;
+    }
+    .fild3
+    {
+        margin: 0px auto 0.2em;
+    }
+    .fild4
+    {
+        margin: 0px auto 0;
+        float: left;
+    }
+    .username
+    {
+        margin: 0;
+        color: #ff003f;
+        border-radius: 5px;
+        border-style: solid;
+        height: 2em;
+        width: 12em;
+        border-color: #ff003f;
+        direction: rtl;
+        text-align: left;
+        padding-left:  4px ;
+    }
+    .submit
+    {
+        transition: all 0.6s ease;
+        margin: 0;
+        border-radius: 6px;
+        border-style: solid;
+        height: 2em;
+        width: 10em;
+        border-color: #ff003f;
+        direction: rtl;
+        text-align: center;
+        padding: 7px 4px 0 0;
+        color: #ff003f;
+        background-color: white;
+    }
+    .submit:hover
+    {
+        border-radius: 10px;
+        background-color: #d4aa32;
+        color:white;
+        cursor: pointer;
+    }
+
+
+    .info
+    {
+        padding: 0;
+        margin: 4px 13px 0px 0px;
+        text-align: center;
+        color: #d4aa32;
+        font-size: 14px;
+        direction:rtl ;
+    }
+    .info2
+    {
+        padding: 0;
+        margin: 4px 13px 0px 0px;
+        text-align: center;
+        color: #fffa00;
+        font-size: 14px;
+        direction:rtl ;
+    }
+
+
+    .email
+    {
+
+        margin: 0;
+        border-radius: 3px;
+        border-style: solid;
+        height: 2em;
+        width: 12em;
+        border-color: #fff;
+        direction: rtl;
+        text-align: left;
+        padding-left:  4px ;
+        background-color: #ff003f;
+        color: white;
+        margin: 1em 0 0 0;
+    }
+    .password
+    {
+        color: #ff003f;
+        mmargin: 0;
+        border-radius: 5px;
+        border-style: solid;
+        height: 100%;
+        border-color: #ff003f;
+        direction: rtl;
+        text-align: left;
+        float: left;
+        padding: 0px 0 0px 4px;
+        width: 12em;
+    }
+    .username2
+    {
+        margin: 0;
+        border-radius: 3px;
+        border-style: solid;
+        height: 2em;
+        width: 12em;
+        border-color: #fff;
+        direction: rtl;
+        text-align: left;
+        padding-left:  4px ;
+        background-color: #ff003f;
+        color: white;
+    }
+    .password2
+    {
+        width: 12em;
+        border-radius: 4px;
+        border-style: solid;
+        height: 2em;
+        border-color: #fff;
+        direction: rtl;
+        text-align: left;
+        float: left;
+        padding-left: 4px;
+        background-color: #ff003f;
+        color: white;
+    }
+
+    .before
+    {
+        color: white;
+        text-align: center;
+        margin: 32px;
+        width: 7em;
+        height: 2em;
+
+        cursor: pointer;
+    }
+    .before:hover
+    {
+        color: white;
+        text-align: center;
+        margin: 32px;
+        width: 7em;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .before2
+    {
+        color: #ff003f;
+        text-align: center;
+        margin: 30px;
+        width: 7em;
+        height: 2em;
+        cursor: pointer;
+
+    }
+    .before2:hover
+    {
+        cursor: pointer;
+        color: #ff003f;
+        text-align: center;
+        margin: 30px;
+        width: 7em;
+        height: 2em;
+        text-decoration: underline;
+    }
+    .login
+    {
+        transition: all 0.6s ease;
+        margin: 0;
+        border-radius: 6px;
+        border-style: solid;
+        height: 1.5em;
+        width: 10.2em;
+        border-color: #fff;
+        direction: rtl;
+        text-align: center;
+        padding: -1px 4px 0 0;
+        color: #fff;
+        background-color: #ff003f;
+    }
+    .login:hover
+    {
+        background-color: #d4aa32;
+        cursor: pointer;
+    }
+
+    .logout-box
+    {
+        margin: 0 auto;
+        width: 50%;
+        position: absolute;
+        bottom: 1em;
+        left: 19%;
+    }
+    .logout
+    {
+        transition: all 0.6s ease;
+        margin: 0;
+        border-radius: 6px;
+        border-style: solid;
+        height: 1.5em;
+        width: 10.2em;
+        border-color: #fff;
+        direction: rtl;
+        text-align: center;
+        padding: -1px 4px 0 0;
+        color: #fff;
+        background-color: #ff003f;
+    }
+    .logout:hover
+    {
+        background-color: #d4aa32;
+        cursor: pointer;
+    }
+
+    .after
+    {
+        width: 10em;
+        height: 10em;
+        background-color: #070c3e;
+    }
+
+    .user
+    {
+        text-align: center;
+        color: #e50039;
+        font-size: 24px;
+        margin: 5px 0 0 0;
+    }
+    .user2
+    {
+
+        color: #e50039;
+        font-weight: bolder;
+
+    }
+
+    .comment-box
+    {
+        position: absolute;
+        left: 3%;
+        width: 100%;
+    }
+    .comment
+    {
+        width: 90%;
+        height: 13em;
+        resize: none;
+        border: none;
+        box-shadow: inset 0px 0px 5px 0.8px rgba(0,0,0,0.5);
+        border-radius: 0.5em;
+        margin-bottom: 5px;
+        padding: 5px 10px 0 0;
+        direction: rtl;
+        text-align: right;
+    }
+    .sub-comment
+    {
+        position: absolute;
+        left: 2.75em;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    }
+}
+@media (min-width:501px ) {
+
+    @font-face {
+        font-family:'IranSans';
+        src:url('./font/IranSans.eot');
+        src:local('IRAN Sans'),
+        local('IRAN Sans'),
+        url('./font/IranSans.eot?#iefix') format('embedded-opentype'),
+            /*url('IranSams.woff') format('woff'), */
+        url('./font/IranSans.ttf') format('truetype');
+
+        font-style:normal;
+        font-weight:normal;
+    }
+    *{font-family: "IranSans"}
+    body{background-color:#070c3e ;}
+    .background
+    {
+
+        padding: 3em 0 0 0;
+    }
+    .comment-back
+    {
+
+        height: 10em;
+        width: 30em;
+        background-color: #d4aa32;
+        margin: 0 auto;
+        -webkit-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        padding-top: 0.5em;
+        overflow: hidden;
+        position: relative;
+
+    }
+    .comments
+    {
+        width: 96%;
+        height: 6em;
+        background-color: white;
+        position: absolute;
+        left: 2%;
+        border-radius: 0.5em;
+        box-shadow: 0.2px 1px 0.5px 1px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .comment-body
+    {
+        border-bottom: 1px solid rgb(212, 170, 50);
+        padding: 4px 10px 0 0;
+        height:1.5em;
+    }
+
+    .comment-text
+    {
+        direction: rtl;
+        text-align: right;
+        float: right;
+    }
+    .all
+    {
+        height: 27em;
+        width: 30em;
+        background-color: #d4aa32;
+        margin:0 auto 5px;
+        -webkit-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        padding-top: 0.5em;
+        overflow: hidden;
+
+    }
+    .card
+    {
+        padding: 0 0 0 0;
+        height: 22em;
+        position:relative;
+        width: 17em;
+        background-color: white;
+        margin:0 auto;
+        -webkit-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        border-radius: 1em;
+        padding: 0 0 0 0;
+
+
+    }
+    .cover
+    {
+        float: left;
+        transition: all 0.6s cubic-bezier(1,0,0,1);
+        background-color: #ff003f;
+        height: 100%;
+        width: 100%;
+        border-radius: 1em;
+    }
+    .coverok
+    {
+        transition: all 0.6s cubic-bezier(1,0,0,1);
+        background-color: #ff003f;
+        height: 4.5em;
+        width: 4.5em;
+        border-radius: 5em;
+        margin:3em 0 0 14.5em;
+        float: left;
+        -webkit-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+        box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.1);
+    }
+    .plus
+    {
+        transition: all 0.5s 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+        font-size: 3em;
+        margin: 36px 0px 0px 3px;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        line-height: 0;
+
+    }
+    .plus:hover
+    {
+        transform: rotate(180deg)  scale(2);
+    }
+    .filds-set
+    {
+        height: 0;
+        overflow: hidden;
+        transition: all 2s 0.6s ease;
+        float: left;
+        margin: 3em 0px 0px 3.3em;
+        opacity: 0 ;
+
+    }
+    .filds
+    {
+
+
+        transition: all 2s 0.6s ease;
+        float: left;
+        margin: 3em 0px 0px 3.3em;
+        opacity:1;
+
+    }
+    .filds2
+    {
+        transition: all 2s 0.6s ease;
+        height: 0;
+        overflow: hidden;
+
+        float: left;
+        margin: 3em 0px 0px 3.3em;
+        opacity: 0 ;
+
+    }
+    .filds2-set
+    {
+
+        transition: all 0.6s 0.6s ease;
+        float: left;
+        margin: 3em 0px 0px 3.3em;
+        opacity: 1 ;
+        overflow: hidden;
+    }
+
+    .fild
+    {
+        margin: 0px auto 0.2em;
+
+
+    }
+    .fildm
+    {
+        margin: 0px auto 0.2em;
+        width: 11em;
+
+
+    }
+    .fild2
+    {
+        margin: 0px auto 0.2em;
+        width: 11.5em;
+        height: 2em;
+    }
+    .fild3
+    {
+        margin: 0px auto 0.2em;
+    }
+    .fild4
+    {
+        margin: 0px auto 0;
+        float: left;
+    }
+    .username
+    {
+        margin: 0;
+        color: #ff003f;
+        border-radius: 5px;
+        border-style: solid;
+        height: 2em;
+        width: 12em;
+        border-color: #ff003f;
+        direction: rtl;
+        text-align: left;
+        padding-left:  4px ;
+    }
+    .submit
+    {
+        transition: all 0.6s ease;
+        margin: 0;
+        border-radius: 6px;
+        border-style: solid;
+        height: 2em;
+        width: 10em;
+        border-color: #ff003f;
+        direction: rtl;
+        text-align: center;
+        padding: 7px 4px 0 0;
+        color: #ff003f;
+        background-color: white;
+    }
+    .submit:hover
+    {
+        border-radius: 10px;
+        background-color: #d4aa32;
+        color:white;
+        cursor: pointer;
+    }
+
+
+    .info
+    {
+        padding: 0;
+        margin: 4px 13px 0px 0px;
+        text-align: center;
+        color: #d4aa32;
+        font-size: 14px;
+        direction:rtl ;
+    }
+    .info2
+    {
+        padding: 0;
+        margin: 4px 13px 0px 0px;
+        text-align: center;
+        color: #fffa00;
+        font-size: 14px;
+        direction:rtl ;
+    }
+
+
+    .email
+    {
+
+        margin: 0;
+        border-radius: 3px;
+        border-style: solid;
+        height: 2em;
+        width: 12em;
+        border-color: #fff;
+        direction: rtl;
+        text-align: left;
+        padding-left:  4px ;
+        background-color: #ff003f;
+        color: white;
+        margin: 1em 0 0 0;
+    }
+    .password
+    {
+        color: #ff003f;
+        mmargin: 0;
+        border-radius: 5px;
+        border-style: solid;
+        height: 100%;
+        border-color: #ff003f;
+        direction: rtl;
+        text-align: left;
+        float: left;
+        padding: 0px 0 0px 4px;
+        width: 12em;
+    }
+    .username2
+    {
+        margin: 0;
+        border-radius: 3px;
+        border-style: solid;
+        height: 2em;
+        width: 12em;
+        border-color: #fff;
+        direction: rtl;
+        text-align: left;
+        padding-left:  4px ;
+        background-color: #ff003f;
+        color: white;
+    }
+    .password2
+    {
+        width: 12em;
+        border-radius: 4px;
+        border-style: solid;
+        height: 2em;
+        border-color: #fff;
+        direction: rtl;
+        text-align: left;
+        float: left;
+        padding-left: 4px;
+        background-color: #ff003f;
+        color: white;
+    }
+
+    .before
+    {
+        color: white;
+        text-align: center;
+        margin: 32px;
+        width: 7em;
+        height: 2em;
+
+        cursor: pointer;
+    }
+    .before:hover
+    {
+        color: white;
+        text-align: center;
+        margin: 32px;
+        width: 7em;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .before2
+    {
+        color: #ff003f;
+        text-align: center;
+        margin: 30px;
+        width: 7em;
+        height: 2em;
+        cursor: pointer;
+
+    }
+    .before2:hover
+    {
+        cursor: pointer;
+        color: #ff003f;
+        text-align: center;
+        margin: 30px;
+        width: 7em;
+        height: 2em;
+        text-decoration: underline;
+    }
+    .login
+    {
+        transition: all 0.6s ease;
+        margin: 0;
+        border-radius: 6px;
+        border-style: solid;
+        height: 1.5em;
+        width: 10.2em;
+        border-color: #fff;
+        direction: rtl;
+        text-align: center;
+        padding: -1px 4px 0 0;
+        color: #fff;
+        background-color: #ff003f;
+    }
+    .login:hover
+    {
+        background-color: #d4aa32;
+        cursor: pointer;
+    }
+
+    .logout-box
+    {
+        margin: 0 auto;
+        width: 50%;
+        position: absolute;
+        bottom: 1em;
+        left: 19%;
+    }
+    .logout
+    {
+        transition: all 0.6s ease;
+        margin: 0;
+        border-radius: 6px;
+        border-style: solid;
+        height: 1.5em;
+        width: 10.2em;
+        border-color: #fff;
+        direction: rtl;
+        text-align: center;
+        padding: -1px 4px 0 0;
+        color: #fff;
+        background-color: #ff003f;
+    }
+    .logout:hover
+    {
+        background-color: #d4aa32;
+        cursor: pointer;
+    }
+
+    .after
+    {
+        width: 10em;
+        height: 10em;
+        background-color: #070c3e;
+    }
+
+    .user
+    {
+        text-align: center;
+        color: #e50039;
+        font-size: 24px;
+        margin: 5px 0 0 0;
+    }
+    .user2
+    {
+
+        color: #e50039;
+        font-weight: bolder;
+
+    }
+
+    .comment-box
+    {
+        position: absolute;
+        left: 3%;
+        width: 100%;
+    }
+    .comment
+    {
+        width: 90%;
+        height: 13em;
+        resize: none;
+        border: none;
+        box-shadow: inset 0px 0px 5px 0.8px rgba(0,0,0,0.5);
+        border-radius: 0.5em;
+        margin-bottom: 5px;
+        padding: 5px 10px 0 0;
+        direction: rtl;
+        text-align: right;
+    }
+    .sub-comment
+    {
+        position: absolute;
+        left: 2.75em;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    }
+
+
+}
